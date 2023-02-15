@@ -98,6 +98,11 @@ def normalize(path_1):
             normalize(path_file)
 
 
-create_directory(sys.argv[1])
-normalize(sys.argv[1])
-sort_files(sys.argv[1])
+def main():
+    create_directory(sys.argv[1])
+    normalize(sys.argv[1])
+    sort_files(sys.argv[1])
+    
+    
+if __name__ == '__main__':
+        main()
